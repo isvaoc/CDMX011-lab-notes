@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
+
+.container{
+    background-color:rgb(226, 228, 133);
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://i.ibb.co/Jdz2TNP/textura-de-la-tarjeta-del-corcho-20038387.jpg"); /* The image used */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    opacity: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo{
+    width: 240px;
+    height: 240px;
+    background-color: #89C2D9;
+    border: 2px solid #A3A3A3;
+    padding: 10px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 64px;
+    text-align: center;
+    transform: rotate(-5deg);
+    p{
+        margin:0;
+    }
+}
+
+#morada{
+    background-color: #980489;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: auto;
+}
+
+.hoja{
+    background-color:rgb(226, 228, 133);
+    height: 605px;
+    width: 460px;
+    background-image: url("https://i.ibb.co/02YJ7pr/hoja-Libreta-1.png"); /* The image used */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    padding: 10px 0px 10px 40px;
+}
+
+.cabecera{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 40px;
+    margin:auto;
+    color: #488AA7;
+}
+
+.chincheta-media{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: auto;
+}
+
+#roja{
+    background-color: #980404;
+}
+
+#verde{
+    background-color: #049874;
+}
+
+.contenido{
+    padding: 0px 20px;
+    font-family: 'Reenie Beanie', cursive;
+    width: 100%;
+    h1{
+        font-size: 60px;
+    }
+    h2{
+        font-size: 42px;
+    }
+    p{
+        font-size: 30px;
+        margin-left: 40px;
+        margin-bottom: 16px;
+    }
+}
+
+label{
+    font-family: 'Reenie Beanie', cursive;
+    color: #980404;
+    font-size: 40px;
+    margin-left: 26px;
+    margin-bottom: 12px;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 35px;
+    width: 190px;
+    font-family: 'Reenie Beanie', cursive;
+}
+
+input:focus{
+    font-size: 35px;
+    font-family: 'Reenie Beanie', cursive;
+}
+
+button{
+    font-size: 35px;
+    font-family: 'Cabin Sketch', cursive;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid black;
+    padding: 5px 20px;
+    transform: rotate(-2deg);
+    margin: 40px auto;
+    display: block;
+}
+
+button:active{
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: translateY(3px);
+}
