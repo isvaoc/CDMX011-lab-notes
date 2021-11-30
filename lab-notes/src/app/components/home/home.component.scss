@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+
+$color-bg:rgb(226, 228, 133);
+$color-no-negro: #424141;
+$color-pin-morado: #980489;
+$color-pin-rojo: #980404;
+$color-pin-verde: #049874;
+$color-pin-verde-oscuro:#04987D;
+$color-pin-azul: #047D98;
+$color-pin-azul-marino: #1E3888;
+$color-notes-blue: #89C2D9;
+$notes-border: 2px solid #A3A3A3;
+$fuente-p: 'Reenie Beanie', cursive;
+$fuente-h: 'Permanent Marker', cursive;
+$fuente-btn: 'Cabin Sketch', cursive;
+$fuente-txt: 'Pompiere', cursive;
+$shadow-btn: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+.container-home{
+    background-color:$color-bg;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://i.ibb.co/Jdz2TNP/textura-de-la-tarjeta-del-corcho-20038387.jpg"); /* The image used */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    opacity: 80%;
+    padding: 20px;
+}
+
+.circulo{
+    background-color:$color-bg;
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    background-image: url("https://i.ibb.co/Jdz2TNP/textura-de-la-tarjeta-del-corcho-20038387.jpg"); /* The image used */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    opacity: 88%;
+    box-shadow: $shadow-btn;
+}
+
+.header-home{
+    background-color: rgba(255, 255, 255, 0.884);
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    padding: 10px 12px;
+}
+
+.hoyos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+
+#pin-header-1{
+    width: 20px;
+    height: 20px;
+    background-color: $color-pin-rojo;
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    background-image: none;
+    opacity: 100%;
+}
+
+#pin-header-2{
+    @extend #pin-header-1;
+    background-color: $color-pin-azul;
+}
+
+.header-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    p{
+        font-family: $fuente-h;
+        font-size: 50px;
+        color: $color-no-negro;
+    }
+
+    button{
+        font-size: 28px;
+        font-family: $fuente-btn;
+        background-color: transparent;
+        border-radius: 50px;
+        border: 1px solid black;
+        padding: 5px 20px;
+    }
+
+    button:active{
+        box-shadow: $shadow-btn;
+        transform: translateY(3px);
+    }
+    
+    button:hover{
+        background-color: rgba(128, 128, 128, 0.445);
+    }
+}
+
+.container-notes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+}

@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
+
+$color-bg:rgb(226, 228, 133);
+$color-no-negro: #424141;
+$color-pin-morado: #980489;
+$color-pin-rojo: #980404;
+$color-pin-verde: #049874;
+$color-notes-blue: #89C2D9;
+$notes-border: 2px solid #A3A3A3;
+$fuente-p: 'Reenie Beanie', cursive;
+$fuente-h: 'Permanent Marker', cursive;
+$fuente-btn: 'Cabin Sketch', cursive;
+$shadow-btn: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+.container{
+    background-color:$color-bg;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://i.ibb.co/Jdz2TNP/textura-de-la-tarjeta-del-corcho-20038387.jpg"); /* The image used */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    opacity: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo{
+    width: 240px;
+    height: 240px;
+    background-color: $color-notes-blue;
+    border: $notes-border;
+    padding: 10px;
+    font-family: $fuente-h;
+    font-size: 64px;
+    text-align: center;
+    transform: rotate(-5deg);
+    p{
+        margin:0;
+    }
+}
+
+#morada{
+    background-color: $color-pin-morado;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    box-shadow: $shadow-btn;
+    margin: auto;
+}
+
+.hoja{
+    background-color: $color-bg;
+    height: 605px;
+    width: 460px;
+    background-image: url("https://i.ibb.co/02YJ7pr/hoja-Libreta-1.png"); /* The image used */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    padding: 10px 0px 10px 40px;
+}
+
+.cabecera{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $fuente-h;
+    font-size: 40px;
+    margin:auto;
+    color: #488AA7;
+}
+
+.chincheta-media{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: auto;
+}
+
+#roja{
+    background-color: $color-pin-rojo;
+}
+
+#verde{
+    background-color: $color-pin-verde;
+}
+
+.contenido{
+    padding: 0px 20px;
+    font-family: $fuente-p;
+    width: 100%;
+    h1{
+        font-size: 60px;
+    }
+    h2{
+        font-size: 42px;
+    }
+    p{
+        font-size: 30px;
+        margin-left: 40px;
+        margin-bottom: 16px;
+    }
+}
+
+.email{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 25px;
+}    
+
+.password{
+    @extend .email;
+    margin-top: 0px;
+}
+
+label{
+    font-family: $fuente-p;
+    color: $color-pin-rojo;
+    font-size: 40px;
+    margin:0;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 35px;
+    width: 190px;
+    font-family: $fuente-p;
+    margin-bottom: 10px;
+}
+
+input:focus{
+    font-size: 35px;
+    font-family: $fuente-p;
+}
+
+button{
+    font-size: 35px;
+    font-family: $fuente-btn;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid black;
+    padding: 5px 20px;
+    transform: rotate(-2deg);
+    margin: 20px auto;
+    display: block;
+}
+
+#input-email{
+    width: 260px;
+}
+
+button:active{
+    box-shadow: $shadow-btn;
+    transform: translateY(3px);
+}
+
+button:hover{
+    background-color: rgba(128, 128, 128, 0.445);
+}
