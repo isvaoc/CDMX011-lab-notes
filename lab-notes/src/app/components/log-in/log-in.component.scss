@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
 
 $color-bg:#B28960;
 $color-no-negro: #424141;
@@ -12,6 +13,7 @@ $notes-border: 2px solid #A3A3A3;
 $fuente-p: 'Reenie Beanie', cursive;
 $fuente-h: 'Permanent Marker', cursive;
 $fuente-btn: 'Cabin Sketch', cursive;
+$fuente-txt: 'Pompiere', cursive;
 $shadow-btn: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
 
 .container{
@@ -115,8 +117,9 @@ $shadow-btn: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-end;
+    align-items: center;
     padding-left: 25px;
+    margin-bottom: 12px;
 }    
 
 .password{
@@ -133,17 +136,22 @@ label{
 
 input{
     background-color: transparent;
+    border-radius: 10px;
     border: none;
-    border-bottom: 1px solid black;
-    font-size: 35px;
+    border-bottom: 2px solid black;
+    font-size: 30px;
     width: 190px;
-    font-family: $fuente-p;
+    font-family: $fuente-txt;
     margin-bottom: 10px;
 }
 
+input::placeholder{
+    padding-left: 10px;
+}
+
 input:focus{
-    font-size: 35px;
-    font-family: $fuente-p;
+    font-size: 30px;
+    font-family: $fuente-txt;
 }
 
 button{

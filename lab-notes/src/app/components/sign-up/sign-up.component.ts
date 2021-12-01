@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+//import { AngularFireAuth } from '@angular/fire/compat/auth';
 
 @Component({
   selector: 'app-sign-up',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignUpComponent implements OnInit {
 
-  constructor() { }
+  constructor() { } //private auth:AngularFireAuth
 
   ngOnInit(): void {
   }
 
+  /*signUpUser(){
+    this.auth.createUserWithEmailAndPassword('test@test.com','123456')
+  }*/
 }

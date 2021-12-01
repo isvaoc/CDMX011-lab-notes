@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "labnotes-90603": {
+      "hosting": {
+        "lab-notes": [
+          "labnotes-90603"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "labnotes-90603"
+  }
+}
