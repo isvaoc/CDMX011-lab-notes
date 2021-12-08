@@ -1,14 +1,27 @@
 import { Injectable } from '@angular/core';
-import { AngularFireAuth } from '@angular/fire/compat/auth';
-
-
+import {AngularFireAuth} from '@angular/fire/compat/auth';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  /*constructor(private auth:AngularFireAuth) { 
-    this.auth.createUserWithEmailAndPassword('test@test.com','123456')
-  }*/
+  constructor(private auth: AngularFireAuth) {}
+
+  async signUp(email: string, password: string){
+    return await this.auth.createUserWithEmailAndPassword(email, password);
+  } 
+
+  async logIn(email: string, password: string){
+    return await this.auth.signInWithEmailAndPassword(email, password);
+  } 
+
+  async signOut(){
+    return await this.auth.signOut()
+  }
+
+  async getUser(){
+    return await this.auth.authState;
+  }
+  
 }

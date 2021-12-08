@@ -15,13 +15,13 @@
         <p>Llenar los siguientes campos:</p>
         <div class="email">
           <label>E-mail:</label>
-          <input type="email" id="input-email" required placeholder="test@test.com">
+          <input type="email" id="input-email" required placeholder="test@test.com" [(ngModel)]='user.email'>
         </div>
         <div class="password">
           <label>Contraseña:</label>
-          <input type="password" required placeholder="*******">
+          <input type="password" required placeholder="*******" [(ngModel)]='user.password'>
         </div>
-        <button type="submit" routerLink="/home">Ingresar</button><br>
+        <button type="submit"  (click)='newLogIn()'>Ingresar</button><br>
         <h2>- Si no tengo cuenta,</h2>
         <button type="button" routerLink="/signUp">Registrarme</button>
       </div>

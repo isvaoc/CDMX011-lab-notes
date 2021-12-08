@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-//import { AngularFireAuth } from '@angular/fire/compat/auth';
+import { Router } from '@angular/router';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-sign-up',
@@ -8,12 +9,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignUpComponent implements OnInit {
 
-  constructor() { } //private auth:AngularFireAuth
 
   ngOnInit(): void {
   }
 
-  /*signUpUser(){
-    this.auth.createUserWithEmailAndPassword('test@test.com','123456')
-  }*/
+  user={
+    email:'',
+    name:'',
+    password:'',
+    repeatPassword:''
+  }
+
+  constructor(private router: Router, private authService: AuthService){}
+
+  newSignUp(){
+    console.log(this.user);
+    const {email, name, password, repeatPassword} = this.user;
+    if (email !== '' && name !== '' && password !== '' && repeatPassword !== ''){
+      this.authService.signUp(email, password).then((res)=> {
+        console.log('se registró ' + res)
+        this.router.navigate(['home'])
+      })
+    } else {
+      console.log('llena todos los campos')
+    }
+  }
+
 }
