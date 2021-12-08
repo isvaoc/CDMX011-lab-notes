@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class AuthGuard implements CanActivate {
+export class AuthGuard2 implements CanActivate {
 
   constructor (private router: Router, private afAuth: AngularFireAuth){}
 
@@ -17,11 +17,10 @@ export class AuthGuard implements CanActivate {
       this.afAuth.onAuthStateChanged((user)=>{
         console.log(this.router.url)
         if (user){
-          resolve(true);
+          resolve(false);
         } else {
           console.log(' no estás loggueado');
-          this.router.navigate(['']);
-          resolve(false);
+          resolve(true);
         }
       })
     })
